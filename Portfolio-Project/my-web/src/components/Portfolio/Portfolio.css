@@ -1,0 +1,93 @@
+.port_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+
+.port_item {
+    background: var(--color-bg-variant);
+    padding: 1.3rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.port_item:hover {
+    border-color: purple;
+    background: transparent;
+}
+
+.port_item-image {
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.port_item h3 {
+    margin: 1.2rem 0 2rem;
+}
+
+.port_item-btn {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.btn10 {
+    width: max-content;
+    display: inline-block;
+    color: white;
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid magenta;
+    transition: var(--transition);
+    background: transparent;
+    box-shadow: inset 0 0 0 0 white;
+    transition: ease-in 0.3s;
+}
+
+.btn10:hover {
+    box-shadow: inset 300px 0 0 0 white;
+    color: purple;
+    border: 1px solid transparent;
+}
+
+.btn20 {
+    width: max-content;
+    display: inline-block;
+    color: white;
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid magenta;
+    transition: var(--transition);
+    background: transparent;
+    box-shadow: inset 0 0 0 0 purple;
+    transition: ease-in 0.3s;
+}
+
+.btn20:hover {
+    box-shadow: inset 300px 0 0 0 purple;
+    color: white;
+    border: 1px solid transparent;
+}
+
+
+/*-----------------MEDIA QUERIES (TABLETS)-------------*/
+
+@media screen and (max-width: 1024px) {
+    .port_container {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
+    }
+}
+
+
+/*-----------------MEDIA QUERIES (DEVICES)-------------*/
+
+@media screen and (max-width: 600px) {
+    .port_container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}

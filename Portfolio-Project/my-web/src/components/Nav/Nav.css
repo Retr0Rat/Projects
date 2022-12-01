@@ -1,0 +1,141 @@
+nav {
+    background: rgba(0, 0, 0, 0.3);
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1.7rem;
+    position: fixed;
+    left: 41.4%;
+    transform: translateX(-50%);
+    bottom: 2rem;
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(10px);
+}
+
+nav a {
+    background: transparent;
+    padding: 0.9rem;
+    border-radius: 50%;
+    display: flex;
+    color: var(--color-light);
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    background: purple;
+    color: white;
+    font-size: 1.4rem;
+    transition: 0.2s ease-in-out;
+}
+
+
+/*-----------------MEDIA QUERIES (TABLETS)-------------*/
+
+@media screen and (max-width: 1024px) {
+    nav {
+        left:28%;
+    }
+}
+
+
+/*-----------------MEDIA QUERIES (DEVICES)-------------*/
+
+@media screen and (max-width: 1400px) {
+    nav {
+        left:41%;
+        gap: 0rem;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    nav {
+        left:40.5%;
+        gap: 0rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    nav {
+        left:39.5%;
+        gap: 0rem;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    nav {
+        left:37.3%;
+        gap: 0rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        left:13%;
+        bottom:.5rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    nav {
+        left:27%;
+        gap: 0rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    nav {
+        left:20.3%;
+        gap: 0rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    nav {
+        left:20%;
+        gap: 0rem;
+    }
+}
+
+@media screen and (max-width: 395px) {
+    nav {
+        left:18.8%;
+        gap: 0rem;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    nav {
+        left:17.2%;
+        gap: 0rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    nav {
+        left:16%;
+        gap: 0rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    nav {
+        left:20%;
+        gap: 0.2rem;
+        height:6%;
+        width:50%;
+    }
+    nav a{
+        font-size:0.7rem;
+        padding:0.4rem;
+        border-radius: 1rem;
+        bottom:1rem;
+    }
+    nav a:hover {
+        background: purple;
+        color: white;
+        font-size: 0.8rem;
+        transition: 0.2s ease-in-out;
+    }
+}
+
